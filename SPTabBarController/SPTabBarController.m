@@ -12,7 +12,6 @@
 @interface SPTabBarController () <UITabBarDelegate>
 {
   NSMutableArray* _controllers;
-  NSMutableArray* _tabBarItems;
 }
 @end
 
@@ -56,14 +55,15 @@
   CGFloat h = bounds.size.height;
   
   CGRect tabBarRect = CGRectMake(0, h - TAB_BAR_HEIGHT, w, TAB_BAR_HEIGHT);
-  _tabBarItems = [[NSMutableArray alloc]initWithCapacity:_controllers.count];
+  NSMutableArray* tabBarItems = [[NSMutableArray alloc]initWithCapacity:_controllers.count];
   
   for (UIViewController* controller in _controllers) {
-    [_tabBarItems addObject:controller.tabBarItem];
+    [tabBarItems addObject:controller.tabBarItem];
   }
   _tabBar = [[UITabBar alloc] initWithFrame:tabBarRect];
-  [_tabBar setItems:_tabBarItems animated:NO];
-  [_tabBar setSelectedItem:[_tabBarItems objectAtIndex:_selectedTabIndex]];
+  [_tabBar setItems:tabBarItems animated:NO];
+  [_tabBar setSelectedItem:[tabBarItems objectAtIndex:_selectedTabIndex]];
+  [tabBarItems release];
   _tabBar.delegate = self;
   _tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   _tabBar.contentMode = UIViewContentModeRedraw;
@@ -79,7 +79,6 @@
 -(void)viewDidUnload
 {
   _tabBar = nil;
-  [_tabBarItems release];
   [_controllers release];
 }
 
@@ -94,7 +93,7 @@
   //because for small array it's not an issue.
   //generally, index lookup on small array outperforms
   //hash lookup. YMMV
-  NSUInteger newIndex = [_tabBarItems indexOfObject:item];
+  NSUInteger newIndex = [_tabBar.items indexOfObject:item];
   UIViewController* fromvc = _selectedViewController;
   UIViewController* tovc = [_controllers objectAtIndex:newIndex];
   tovc.view.frame = fromvc.view.frame;
