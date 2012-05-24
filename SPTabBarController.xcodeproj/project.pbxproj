@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0AF29A156DD4A4009C2666 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0AF299156DD4A4009C2666 /* UIKit.framework */; };
+		AA0AF29C156DD4A4009C2666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0AF29B156DD4A4009C2666 /* Foundation.framework */; };
+		AA0AF29E156DD4A4009C2666 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0AF29D156DD4A4009C2666 /* CoreGraphics.framework */; };
+		AA0AF2A4156DD4A5009C2666 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA0AF2A2156DD4A5009C2666 /* InfoPlist.strings */; };
+		AA0AF2A6156DD4A5009C2666 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF2A5156DD4A5009C2666 /* main.m */; };
+		AA0AF2AA156DD4A5009C2666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF2A9156DD4A5009C2666 /* AppDelegate.m */; };
+		AA0AF2CE156DD6DA009C2666 /* SPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0AF2CD156DD6DA009C2666 /* SPTabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0AF295156DD4A4009C2666 /* SPTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0AF299156DD4A4009C2666 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA0AF29B156DD4A4009C2666 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA0AF29D156DD4A4009C2666 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA0AF2A1156DD4A5009C2666 /* SPTabBarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPTabBarController-Info.plist"; sourceTree = "<group>"; };
+		AA0AF2A3156DD4A5009C2666 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA0AF2A5156DD4A5009C2666 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA0AF2A7156DD4A5009C2666 /* SPTabBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPTabBarController-Prefix.pch"; sourceTree = "<group>"; };
+		AA0AF2A8156DD4A5009C2666 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA0AF2A9156DD4A5009C2666 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA0AF2CC156DD6DA009C2666 /* SPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBarController.h; sourceTree = "<group>"; };
+		AA0AF2CD156DD6DA009C2666 /* SPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBarController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0AF292156DD4A4009C2666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0AF29A156DD4A4009C2666 /* UIKit.framework in Frameworks */,
+				AA0AF29C156DD4A4009C2666 /* Foundation.framework in Frameworks */,
+				AA0AF29E156DD4A4009C2666 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0AF28A156DD4A4009C2666 = {
+			isa = PBXGroup;
+			children = (
+				AA0AF29F156DD4A4009C2666 /* SPTabBarController */,
+				AA0AF298156DD4A4009C2666 /* Frameworks */,
+				AA0AF296156DD4A4009C2666 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0AF296156DD4A4009C2666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0AF295156DD4A4009C2666 /* SPTabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0AF298156DD4A4009C2666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0AF299156DD4A4009C2666 /* UIKit.framework */,
+				AA0AF29B156DD4A4009C2666 /* Foundation.framework */,
+				AA0AF29D156DD4A4009C2666 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0AF29F156DD4A4009C2666 /* SPTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				AA0AF2A8156DD4A5009C2666 /* AppDelegate.h */,
+				AA0AF2A9156DD4A5009C2666 /* AppDelegate.m */,
+				AA0AF2A0156DD4A5009C2666 /* Supporting Files */,
+				AA0AF2CC156DD6DA009C2666 /* SPTabBarController.h */,
+				AA0AF2CD156DD6DA009C2666 /* SPTabBarController.m */,
+			);
+			path = SPTabBarController;
+			sourceTree = "<group>";
+		};
+		AA0AF2A0156DD4A5009C2666 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA0AF2A1156DD4A5009C2666 /* SPTabBarController-Info.plist */,
+				AA0AF2A2156DD4A5009C2666 /* InfoPlist.strings */,
+				AA0AF2A5156DD4A5009C2666 /* main.m */,
+				AA0AF2A7156DD4A5009C2666 /* SPTabBarController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0AF294156DD4A4009C2666 /* SPTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0AF2C1156DD4A5009C2666 /* Build configuration list for PBXNativeTarget "SPTabBarController" */;
+			buildPhases = (
+				AA0AF291156DD4A4009C2666 /* Sources */,
+				AA0AF292156DD4A4009C2666 /* Frameworks */,
+				AA0AF293156DD4A4009C2666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPTabBarController;
+			productName = SPTabBarController;
+			productReference = AA0AF295156DD4A4009C2666 /* SPTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0AF28C156DD4A4009C2666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = AA0AF28F156DD4A4009C2666 /* Build configuration list for PBXProject "SPTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA0AF28A156DD4A4009C2666;
+			productRefGroup = AA0AF296156DD4A4009C2666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0AF294156DD4A4009C2666 /* SPTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0AF293156DD4A4009C2666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0AF2A4156DD4A5009C2666 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0AF291156DD4A4009C2666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0AF2A6156DD4A5009C2666 /* main.m in Sources */,
+				AA0AF2AA156DD4A5009C2666 /* AppDelegate.m in Sources */,
+				AA0AF2CE156DD6DA009C2666 /* SPTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA0AF2A2156DD4A5009C2666 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA0AF2A3156DD4A5009C2666 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA0AF2BF156DD4A5009C2666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA0AF2C0156DD4A5009C2666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0AF2C2156DD4A5009C2666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPTabBarController/SPTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "SPTabBarController/SPTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA0AF2C3156DD4A5009C2666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPTabBarController/SPTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "SPTabBarController/SPTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0AF28F156DD4A4009C2666 /* Build configuration list for PBXProject "SPTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0AF2BF156DD4A5009C2666 /* Debug */,
+				AA0AF2C0156DD4A5009C2666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0AF2C1156DD4A5009C2666 /* Build configuration list for PBXNativeTarget "SPTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0AF2C2156DD4A5009C2666 /* Debug */,
+				AA0AF2C3156DD4A5009C2666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0AF28C156DD4A4009C2666 /* Project object */;
+}
