@@ -1,6 +1,11 @@
 ## SPTabBarController
 
-SPTabBarController is a custom tab bar container controller in ios 5. Unlike stock TabBarController, it can be embedded inside UINavigationController and it can be used with a custom tab bar.
+SPTabBarController is a custom tab bar container controller in ios 5. Unlike stock TabBarController, it can be embedded inside UINavigationController and it can be used with a custom tab bar. SPTabBarController API is identical to UITabBarController.
+
+``` objective-c
+  SPTabBarController* tbc = [[[SPTabBarController alloc] init] autorelease];
+  tbc.controllers = [NSArray arrayWithObjects:vc1, vc2, vc3, vc4, nil];
+```
 
 SPTabBarController is also an example of implementing custom container conttoller in ios 5 which fully interoperate with other built in container in iphone and ipad.
 
