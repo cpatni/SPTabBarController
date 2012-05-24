@@ -86,6 +86,31 @@
 	return [self.selectedViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
 }
 
+- (void)replaceViewControllerAtIndex:(NSUInteger)index withViewController:(UIViewController*)newvc
+{
+  UIViewController* oldvc = [_controllers objectAtIndex:index];
+  [oldvc willMoveToParentViewController:nil];
+  [self addChildViewController:newvc];
+  if(_selectedViewController == oldvc) {
+    _selectedViewController = newvc;
+    newvc.view.frame = oldvc.view.frame;
+    [self 
+     transitionFromViewController:oldvc
+     toViewController:newvc
+     duration:0
+     options:UIViewAnimationOptionTransitionNone
+     animations:nil
+     completion:^(BOOL done) {
+       [oldvc removeFromParentViewController];
+       [newvc didMoveToParentViewController:self];
+     }];
+  } else {
+    [oldvc removeFromParentViewController];
+    [newvc didMoveToParentViewController:self];
+  }
+  [_controllers replaceObjectAtIndex:index withObject:newvc];
+}
+
 #pragma mark UITabBarDelegate protocol
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {

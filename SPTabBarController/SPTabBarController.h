@@ -16,4 +16,10 @@
 @property (nonatomic, assign) NSUInteger initialTabIndex;
 @property (nonatomic, assign) NSUInteger selectedTabIndex;
 
+/*
+ * Replaces the view controller at the given index with a new view 
+ * controller. The current implemenation doesn't change the tab bar
+ * item.
+ */
+- (void)replaceViewControllerAtIndex:(NSUInteger)index withViewController:(UIViewController*)newvc;
 @end
